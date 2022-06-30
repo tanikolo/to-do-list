@@ -1,0 +1,103 @@
+.header,
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: "Pacifico", cursive;
+  background: linear-gradient(to left, #3f5efb, #fc466b);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.inputField {
+  padding: 10px;
+  width: 50%;
+  font-size: 40px;
+  color: #fc466b;
+  font-family: "Pacifico", cursive;
+  border: 1px solid #eeaeca;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.btn {
+  width: 10%;
+  padding: 20px;
+  background: #eeaeca;
+  border: 1px solid #eeaeca;
+  border-radius: 0px 15px 15px 0px;
+}
+
+span {
+  color: white;
+  font-size: 50px;
+}
+
+body {
+  background-image: url(https://cdn.glitch.global/ab9f59fe-4eb8-4f34-8fff-18de3971ce39/back.jpg?v=1644453321577);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background-color: #eeaeca;
+}
+
+.toDoAdded {
+  background: #eeaeca;
+  list-style-type: none;
+  height: 60px;
+  width: 50%;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-family: "Pacifico", cursive;
+  border-bottom: 2px solid #94bbe9;
+  border-radius: 15px;
+}
+
+.toDoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toDoCompleted {
+  background: #94bbe9;
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+  text-decoration: line-through #eeaeca;
+  transition: all 1s ease;
+}
+
+@media all and (max-width: 800px) {
+  h1 {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+  .toDoAdded {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+  }
+  .inputField {
+    padding: 5px;
+    width: 70%;
+  }
+
+  .btn {
+    padding: 5px;
+    width: 20%;
+  }
+
+  .toDoAdded {
+    width: 100%;
+    margin-right: 50px;
+  }
+}
